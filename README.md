@@ -16,6 +16,16 @@ it simply add the following line to your Podfile:
 
     pod "gsoap"
 
+Incorporation of this pod brings gsoap library support.  Prior file 
+generation (e.g. using wsdl2h) is assumed to have already occured.
+
+Both base support and support for the wsse plugin are included.  The
+header file stdsoap2.h has been modified to allow to declaration of 
+SOAP_NODEBUG to override the library's otherwise default behavior
+which would cause compilation and/or runtime problems.  This should
+be set in the main target procompiler define section.
+
+
 ## Author
 
 waTeim, truthset@gmail.com

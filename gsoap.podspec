@@ -18,9 +18,9 @@ http://gsoap2.sourceforge.net for project status and latest news.
   s.author       = { "waTeim" => "truthset@gmail.com" }
   s.source       = { :git => "https://github.com/waTeim/gsoap.git", :tag => s.version.to_s }
 
-  s.platform     = :osx,'10.6'
+  s.platform     = :osx,"10.6"
   s.requires_arc = false
-  s.vendored_libraries = 'lib/*.a'
-  s.source_files = s.public_header_files = 'include/*.h'
-  s.header_mappings_dir = 'include'
+  s.vendored_libraries = "lib/*.a"
+  s.source_files = s.public_header_files = "include/*.h"
+  s.header_mappings_dir = "include"
 end

@@ -1425,6 +1425,7 @@ typedef soap_int32 soap_mode;
 
 /* DEBUG macros */
 
+#ifndef SOAP_NODEBUG
 #ifndef WITH_LEAN
 # ifdef DEBUG_STAMP
 #  ifndef DEBUG
@@ -1439,6 +1440,7 @@ typedef soap_int32 soap_mode;
 #   define SOAP_MEM_DEBUG
 #  endif
 # endif
+#endif
 #endif
 
 #ifdef SOAP_MEM_DEBUG
