@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "gsoap"
   s.version      = "2.8.16"
-  s.summary      = "Development toolkit for Web services and XML data bindings for C & C++"
+  s.summary      = "Development toolkit for Web services and XML data bindings for C & C++."
   s.description  = <<-DESC
 The gSOAP toolkit provides a cross-platform software development toolkit for C
 and C++ server and client Web service applications, and simplifies the overall
