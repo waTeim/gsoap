@@ -1425,22 +1425,6 @@ typedef soap_int32 soap_mode;
 
 /* DEBUG macros */
 
-#ifndef WITH_LEAN
-# ifdef DEBUG_STAMP
-#  ifndef DEBUG
-#   define DEBUG
-#  endif
-# endif
-# ifdef DEBUG
-#  ifndef SOAP_DEBUG
-#   define SOAP_DEBUG
-#  endif
-#  ifndef SOAP_MEM_DEBUG
-#   define SOAP_MEM_DEBUG
-#  endif
-# endif
-#endif
-
 #ifdef SOAP_MEM_DEBUG
 # ifndef SOAP_MALLOC
 #  define SOAP_MALLOC(soap, size) soap_track_malloc(soap, __FILE__, __LINE__, size)
