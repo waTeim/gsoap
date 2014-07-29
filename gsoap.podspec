@@ -13,15 +13,14 @@ or under development. See the official open-source gSOAP website
 http://gsoap2.sourceforge.net for project status and latest news.
                    DESC
   s.homepage     = "http://http://sourceforge.net/projects/gsoap2/"
-  s.screenshots  = 
   s.license      = 'GSOAP'
   s.author       = { "waTeim" => "truthset@gmail.com" }
   s.source       = { :git => "https://github.com/waTeim/gsoap.git", :tag => s.version.to_s }
-
   s.platform     = :osx,"10.6"
   s.requires_arc = false
   s.vendored_libraries = "lib/libgsoapssl++.a"
-  s.source_files = s.public_header_files =
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/poco/include"' }
+  s.private_header_files = s.source_files =
      "include/*.h"
   s.header_mappings_dir = "include"
 end
